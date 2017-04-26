@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch API App</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- http://bootsnipp.com/snippets/featured/simple-vertical-tab -->
+<div class="container">
+  <div class="page-header">
+    <div class="pull-left">
+      <h2>Twitch.Tv</h2>
+    </div>
+    <div class="pull-right">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button id="refresh" class="btn btn-primary"><i class="glyphicon glyphicon-refresh"></i></button>
+        </div>
+         <input type="text" name="search" id="search" placeholder="Search.." class="form-control">
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-offset-1 col-lg-9 col-md-10 col-xs-10 bhoechie-tab-container">
+      <div class="col-lg-3 col-md-3 col-xs-3 bhoechie-tab-menu">
+        <div class="list-group">
+          <a href="#" class="list-group-item active text-center" id="listAll">
+            <h5>All</h5>
+          </a>
+          <a href="#" class="list-group-item text-center" id="listOnline">
+            <h5>Online</h5>
+          </a>
+          <a href="#" class="list-group-item text-center" id="listOffline">                          <h5>Offline</h5>
+          </a>
+        </div>
+      </div>
+      
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+        <div class="bhoechie-tab-content active contentList" id="twitchList">
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="push"></div>
+</div>
+
+<!--Footer-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-2">
+        <p class="footer-text">
+           &copy;2016 Jitendra Panchal
+          </p>    
+      </div>
+      <div class="col-md-offset-2 col-md-3 col-sm-3 col-sm-offset-2 col-xs-2 col-xs-offset-2">
+        <p class="text-center profile-icons">
+         <a href="http://codepen.io/Jitendra-25/full/VPYovr/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
+             <a href=""><i class="fa fa-github fa-2x"></i></a> 
+             <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+             <a href="mailto:jitendra.0325@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+      </p>
+      </div>
+      <div class="col-md-offset-1 col-md-2 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
+        <p class="text-right"><a class="footer-text" href="http://codepen.io/Jitendra-25/" target="_blank">Codepen</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
